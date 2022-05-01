@@ -1,6 +1,6 @@
 ---
 - name: Deploy Resume-Builder 
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Pull docker image of Resume Builder
       docker_image:
