@@ -21,7 +21,7 @@ it("renders Landing page 2", () => {
   expect(wrapper.contains(welcome)).toEqual(true);
 });
 
-it("renders Landing page", () => {
+/*it("renders Landing page", () => {
   const wrapper = shallow(<LandingPage />);
   const welcome = <h1>Select a resume template to get started</h1>;
   expect(wrapper.contains(welcome)).toEqual(true);
@@ -46,4 +46,4 @@ describe("", () => {
     //const value = wrapper.find("p").text();
     //expect(value).toEqual("david@gmail.com");
   //});
-});
+});*/
