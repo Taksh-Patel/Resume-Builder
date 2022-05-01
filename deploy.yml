@@ -1,8 +1,17 @@
 ---
-- name: Pull docker image of Calculator
-  hosts: all
+- name: Deploy Resume-Builder 
+  hosts: localhost
   tasks:
-    - name: Pull image
+    - name: Pull docker image of Resume Builder
       docker_image:
-        name: takshpatel/resume-builder
+        name: takshpatel/resume-builder:latest
         source: pull
+    
+    - name: Create the resume-builder deployment and service
+      command: 
+        cmd: minikube kubectl -- apply -f k8s-config/
+
+    - name: Update deployment with new pods if image updated
+      command:
+        cmd: minikube kubectl -- rollout restart deployment.apps/resume-builder-deployment
+      
