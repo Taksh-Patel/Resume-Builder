@@ -6,7 +6,11 @@
       docker_image:
         name: takshpatel/resume-builder:latest
         source: pull
-    
+
+    - name: Start minikube
+      command: 
+        cmd: minikube start
+
     - name: Create the resume-builder deployment and service
       command: 
         cmd: minikube kubectl -- apply -f k8s-config/
