@@ -13,7 +13,7 @@
 
     - name: Create the resume-builder deployment and service
       command: 
-        cmd: minikube kubectl -- apply -f k8s-config/
+        cmd: minikube kubectl -- apply -f /var/lib/jenkins/workspace/Resume-Builder/k8s-config/
 
     - name: Update deployment with new pods if image updated
       command:
