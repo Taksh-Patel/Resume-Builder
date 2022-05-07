@@ -13,6 +13,12 @@ import thunk from 'redux-thunk';
 import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase';
 import { createFirestoreInstance } from 'redux-firestore';
+import LogRocket from 'logrocket';
+LogRocket.init('lvfql9/resume-builder');
+const store = createStore(
+  rootReducer, // your app reducer
+  applyMiddleware(LogRocket.reduxMiddleware()),
+);
 
 const firebaseConfig = {
   apiKey: "AIzaSyDQJPPQkN_Lus_UE-OjviZvQoGZSJeUrFU",
