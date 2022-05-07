@@ -20,7 +20,7 @@ it("renders Landing page 2", () => {
   const welcome = <span>Get Started for Free</span>;
   expect(wrapper.contains(welcome)).toEqual(true);
 });
-
+//
 /*it("renders Landing page", () => {
   const wrapper = shallow(<LandingPage />);
   const welcome = <h1>Select a resume template to get started</h1>;
