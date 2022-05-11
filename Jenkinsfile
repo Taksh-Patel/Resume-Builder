@@ -10,8 +10,7 @@ pipeline {
         stage('npm Build') {
             steps {
                 nodejs(nodeJSInstallationName: 'NodeJS') {
-                    sh 'npm rebuild node-sass'
-                    sh 'npm run build'
+                    sh 'npm install'
                 }
             }
         }
