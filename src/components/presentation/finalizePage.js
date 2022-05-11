@@ -8,6 +8,8 @@ import {useFirestore} from 'react-redux-firebase'
    function Finalize(props) {
     let educationSection= props.educationSection
     let contactSection=props.contactSection
+    let experienceSection=props.experienceSection
+    let skillsSection=props.skillsSection
     let documentd=props.document
     let firestore = useFirestore()
   
@@ -17,9 +19,9 @@ import {useFirestore} from 'react-redux-firebase'
       user = user.data()
       let obj
       if(user.resumeIds!=undefined){
-          obj = {...user.resumeIds,[documentd.id]:{educationSection:educationSection,contactSection:contactSection,document:documentd}}
+          obj = {...user.resumeIds,[documentd.id]:{contactSection:contactSection,educationSection:educationSection,experienceSection:experienceSection,skillsSection:skillsSection,document:documentd}}
       }else{
-          obj = {[documentd.id]:{educationSection:educationSection,contactSection:contactSection,document:documentd}}
+          obj = {[documentd.id]:{contactSection:contactSection,educationSection:educationSection,experienceSection:experienceSection,skillsSection:skillsSection,document:documentd}}
       }
       await firestore.collection('users').doc(props.auth.uid).update({
         resumeIds : obj
@@ -46,7 +48,7 @@ import {useFirestore} from 'react-redux-firebase'
       <div className="container full finalize-page" >
       <div className="funnel-section ">
           <div className="finalize-preview-card " id="resumePreview">
-            <ResumePreview contactSection={props.contactSection} educationSection={props.educationSection} skinCd={props?.document?.skinCd}></ResumePreview>   
+            <ResumePreview contactSection={props.contactSection} educationSection={props.educationSection} experienceSection={props.experienceSection} skillsSection={props.skillsSection} skinCd={props?.document?.skinCd}></ResumePreview>   
           </div>
           <div className="finalize-settings center">            
 
@@ -74,6 +76,8 @@ const mapStateToProps = (state) => {
     document : state.document,
     contactSection : state.contact,
     educationSection : state.education,
+    experienceSection : state.experience,
+    skillsSection : state.skills,
     auth:state.firebase.auth
   }
 }

@@ -34,7 +34,7 @@ function Education(props) {
       //set
       props.setEducation(education)
     }
-     history.push('/finalize')
+     history.push('/experience')
   }
 
     

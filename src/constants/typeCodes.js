@@ -39,8 +39,27 @@ export const fieldCd = {
     IsEmailHidden: "EHID",
     SchoolCountry: "SCNT",
     JobCountry: "JCNT",
-    Country: "CNTY"
-    
+    Country: "CNTY",
+
+    CompanyName : "CNYNAME",
+    JobRole : "JBRL",
+    Location2 : "LOCN2",
+    StartDate : "STRTDT",
+    EndDate : "ENDDT",
+    Desc1 : "DS1",
+    Desc2 : "DS2",
+    Desc3 : "DS3",
+    Desc4 : "DS4",
+
+    Skill1 : "SK1",
+    Skill2 : "SK2",
+    Skill3 : "SK3",
+    Skill4 : "SK4",
+    Skill5 : "SK5",
+    Skill6 : "SK6",
+    Skill7 : "SK7",
+    Skill8 : "SK8",
+
 };
 
 

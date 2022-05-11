@@ -4,6 +4,8 @@
         "skinCd":""
     },
     "education" : null,
+    "experience" : null,
+    "skills" : null,
     "contact" : null,
     "auth":{
         "loading":false,

@@ -32,9 +32,7 @@ const Header = (props) => {
   return (  
   <header className="header">
   <nav className="nav">
-      <a href="/" className="holder-logo">
-        <img className='logo' src={logo}></img>
-      </a> 
+     
         <div className="header-links full-height">
 
         { isLoaded(auth) && !isEmpty(auth) ?<>
@@ -60,11 +58,7 @@ const Header = (props) => {
             Resume Templates
             </NavLink>
             </li> 
-            <li className="holder-pricing">            
-              <NavLink className="btn-nvt-gm" to="/about-us">
-              About Us
-              </NavLink>
-            </li>        
+              
           </ul>
             
       </div>   
