@@ -33,60 +33,82 @@ function ResumePreview(props){
 
         return (
             <div>
-            
-            <div className={props.skinCd + " resume-preview "}>
-                <div className={'name-section'}>
-                    <p className={'center contact-name text-upper' }> {rvContact(fieldCd.FirstName,' ')  + rvContact(fieldCd.LastName)}  </p>
-                    <p className={'center address'}>{rvContact(fieldCd.City,', ') + rvContact(fieldCd.State,', ') +  rvContact(fieldCd.Country,', ') + rvContact(fieldCd.ZipCode,', ')}</p>
-                    <p className={'center'}>{rvContact(fieldCd.Email ) }</p>
-                    <p className={'center'}>{rvContact(fieldCd.Phone) } </p>
-                </div>
+        
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="664" height="858" viewBox="25 20 614 858">
 
-                <div className={'profSummSection text-upper'}>                   
-                    <p className="heading bold">PROFESSIONAL SUMMARY</p>
-                     <div className={'divider'}></div>
-                     <p>{rvContact(fieldCd.ProfSummary)}</p>
-                </div>
+	<text x="0" y="90" class="h1">
+		<tspan xmlns="http://www.w3.org/2000/svg" x="45" y="94" className={'bold'}> { rvContact(fieldCd.FirstName,' ')  + rvContact(fieldCd.LastName) } </tspan>
+	</text>
 
-                <div className={'educationSection text-upper'}>                   
-                    <p className="heading bold">EDUCATION DETAILS</p>
-                     <div className={'divider'}></div>
-                     <p>{rvEducation(fieldCd.SchoolName)}</p>
-                     <p>{rvEducation(fieldCd.Degree)}</p>
-                     <p>{rvEducation(fieldCd.City)}</p>
-                     <p>{rvEducation(fieldCd.GraduationCGPA)}</p>
-                     <p>{rvEducation(fieldCd.GraduationDate)}</p>
-                     <p>{rvEducation(fieldCd.GraduationYear)}</p>
-                </div>
+	<text x="0" y="92" class="p3">
+		<tspan x="45" y="113">{rvContact(fieldCd.City,', ') + rvContact(fieldCd.State,', ') +  rvContact(fieldCd.Country,', ') + rvContact(fieldCd.ZipCode)}</tspan>
+	</text>
+	
+	<rect width="435" height="20" className={'colorFill'} x="36" y="144"/>
+	<text x="45" y="158" className={'h2'}> PROFESSIONAL SUMMARY </text>
 
-                <div className={'educationSection text-upper'}>                   
-                    <p className="heading bold">EXPERIENCE DETAILS</p>
-                     <div className={'divider'}></div>
-                     <p>{rvExperience(fieldCd.CompanyName)}</p>
-                     <p>{rvExperience(fieldCd.JobRole)}</p>
-                     <p>{rvExperience(fieldCd.Location2)}</p>
-                     <p>{rvExperience(fieldCd.StartDate)}</p>
-                     <p>{rvExperience(fieldCd.EndDate)}</p>
-                     <p>{rvExperience(fieldCd.Desc1)}</p>
-                     <p>{rvExperience(fieldCd.Desc2)}</p>
-                     <p>{rvExperience(fieldCd.Desc3)}</p>
-                     <p>{rvExperience(fieldCd.Desc4)}</p>
-                </div>
+	<rect width="435" height="20" className={'colorFill'} x="36" y="264"/>
+	<text x="45" y="278" className={'h2'}> SKILLS </text>
 
-                <div className={'educationSection text-upper'}>                   
-                    <p className="heading bold">SKILL DETAILS</p>
-                     <div className={'divider'}></div>
-                     <p>{rvSkills(fieldCd.Skill1)}</p>
-                     <p>{rvSkills(fieldCd.Skill2)}</p>
-                     <p>{rvSkills(fieldCd.Skill3)}</p>
-                     <p>{rvSkills(fieldCd.Skill4)}</p>
-                     <p>{rvSkills(fieldCd.Skill5)}</p>
-                     <p>{rvSkills(fieldCd.Skill6)}</p>
-                     <p>{rvSkills(fieldCd.Skill7)}</p>
-                     <p>{rvSkills(fieldCd.Skill8)}</p>
-                </div>
-          
-            </div>
+	<rect width="435" height="20" className={'colorFill'} x="36" y="374"/>
+	<text x="45" y="389" className={'h2'}> EXPERIENCE </text>
+	
+	<g  transform="translate(0 40)">
+		<rect width="435" height="20" className={'colorFill'} x="36" y="664"/>
+		<text x="45" y="677" className={'h2'}> EDUCATION </text>
+	</g>
+
+
+	<text x="45" y="182" className={'p2'}>{rvContact(fieldCd.ProfSummary)}</text>	
+
+	<circle cx="47" cy="300" r="1.5" className={'li-disc'}></circle>			
+	<circle cx="47" cy="314" r="1.5" className={'li-disc'}></circle>			
+	<circle cx="47" cy="328" r="1.5" className={'li-disc'}></circle>
+	<circle cx="47" cy="342" r="1.5" className={'li-disc'}></circle>
+
+	<text x="62" y="302" className={'p2'}>{rvSkills(fieldCd.Skill1)}</text>
+	<text x="62" y="316" className={'p2'}>{rvSkills(fieldCd.Skill2)}</text>
+	<text x="62" y="330" className={'p2'}>{rvSkills(fieldCd.Skill3)}</text>
+	<text x="62" y="344" className={'p2'}>{rvSkills(fieldCd.Skill4)}</text>
+
+	<circle cx="236" cy="300" r="1.5" className={'li-disc'}></circle>			
+	<circle cx="236" cy="314" r="1.5" className={'li-disc'}></circle>			
+	<circle cx="236" cy="328" r="1.5" className={'li-disc'}></circle>
+	<circle cx="236" cy="342" r="1.5" className={'li-disc'}></circle>
+
+	<text x="251" y="302" className={'p2'}>{rvSkills(fieldCd.Skill5)}</text>
+	<text x="251" y="316" className={'p2'}>{rvSkills(fieldCd.Skill6)}</text>
+	<text x="251" y="330" className={'p2'}>{rvSkills(fieldCd.Skill7)}</text>
+	<text x="251" y="344" className={'p2'}>{rvSkills(fieldCd.Skill8)}</text>
+
+	<text x="45" y="414" className={'subheding'}>{rvExperience(fieldCd.JobRole)}</text>
+	<text x="45" y="428" className={'subheding'}>{rvExperience(fieldCd.CompanyName)} | {rvExperience(fieldCd.Location2)}</text>
+
+	<g  transform="translate(0 15)">
+		<circle cx="47" cy="428" r="1.5"  className={'li-disc'}></circle>			
+		<circle cx="47" cy="442" r="1.5" className={'li-disc'}></circle>			
+		<circle cx="47" cy="456" r="1.5" className={'li-disc'}></circle>
+		<circle cx="47" cy="470" r="1.5" className={'li-disc'}></circle>
+
+		<text x="46" y="500" className={'p2'}>
+			<tspan x="55" y="431">{rvExperience(fieldCd.Desc1)}</tspan>
+			<tspan x="55" y="445">{rvExperience(fieldCd.Desc2)}</tspan>
+			<tspan x="55" y="459">{rvExperience(fieldCd.Desc3)}</tspan>
+			<tspan x="55" y="473">{rvExperience(fieldCd.Desc4)}</tspan>
+		</text>
+	</g>
+
+	<g  transform="translate(0 40)">
+		<text x="47" y="702" className={'subheding'}>{rvEducation(fieldCd.SchoolName,' : ') + rvEducation(fieldCd.Degree)}</text>
+		<text x="47" y="716" className={'p2'}>CGPA : {rvEducation(fieldCd.GraduationCGPA)}</text>
+
+		<text x="378" y="380" className={'p2'}>{rvExperience(fieldCd.StartDate) + "-" + rvExperience(fieldCd.EndDate)}</text>
+		<text x="378" y="702" className={'p2'}>{rvEducation(fieldCd.GraduationDate,' ') + rvEducation(fieldCd.GraduationYear)} </text>
+	</g>
+
+</svg>
+
+           
             </div>
         )
     }
