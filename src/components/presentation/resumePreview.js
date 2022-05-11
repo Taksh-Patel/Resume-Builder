@@ -94,7 +94,7 @@ function ResumePreview(props){
 			<tspan x="55" y="431">{rvExperience(fieldCd.Desc1)}</tspan>
 			<tspan x="55" y="445">{rvExperience(fieldCd.Desc2)}</tspan>
 			<tspan x="55" y="459">{rvExperience(fieldCd.Desc3)}</tspan>
-			<tspan x="55" y="473">{rvExperience(fieldCd.Desc4)}</tspan>
+			<tspan x="55" y="472">{rvExperience(fieldCd.Desc4)}</tspan>
 		</text>
 	</g>
 
