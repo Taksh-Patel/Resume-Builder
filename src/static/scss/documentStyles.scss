@@ -1,17 +1,19 @@
-.skin1{
 
-    padding:3%;
 
-    .tmp{fill:#F1F0F0;}
-    .h1{font-family:"Arial"; font-size:35px; fill:#6ca8b9; font-weight:bold; ____fill:red}
-    .p2 {font-family:"Arial"; font-size:10px; fill:#333; ____fill:red}
-    .p3 {font-family:"Arial"; font-size:9px; fill:#333; ____fill:red}
-    .p2b {font-family:"Arial"; font-size:11px; font-weight:600; fill:#333;____fill:red}
-    .h2 {font-family:"Arial"; font-size:12px; fill:#000; font-weight:600; ____fill:red}
-    .subheding {font-family:"Arial"; font-size:10px; fill:rgba(0, 0, 0, 0.66); font-weight:600; ____fill:red}
-    .li-disc {fill:#333; ____fill:red}
-    .text-cap {font-size:24px; fill: #fff;font-family:"Arial";}
-    .line {stroke:#999;___stroke:#090;}
+        .h1{font-family:"Arial"; font-size:40px; fill:#000; }
+        .p2 {font-family:"Arial"; font-size:9px; fill:#333; }
+        .p3 {font-family:"Arial"; font-size:09px; fill:#9b9b9b; }
+        .p2b {font-family:"Arial"; font-size:11px; font-weight:600; fill:#000; }
+        .h2 {font-family:"Arial"; font-size:9px; fill:#000; font-weight:600; }
+        .subheding {font-family:"Arial"; font-size:9px; fill:#333; font-weight:600; }
+        .li-disc {fill:#333; }
+        .text-cap {font-size:24px; fill: #fff;font-family:"Arial";}
+        .line{stroke:#fff; stroke:#090;}
+        .bold{font-weight:700}
+
+        .r1 {margin:0 auto; }
+        .colorFill {fill:#F1F0F0}
+
 
     .contact-name{
         color: cornflowerblue;
@@ -32,7 +34,7 @@
             
         }
     }
-}
+
 
 .divider{
     width: 100%;
