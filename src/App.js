@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './static/scss/app.scss';
 import 'react-router-dom';
 import { Route,Switch } from 'react-router-dom';
@@ -11,6 +12,8 @@ import Register from './components/presentation/register';
 import AboutUs from './components/presentation/aboutUs';
 import Contacts from './components/presentation/contact';
 import Education from './components/presentation/education';
+import Experience from './components/presentation/experience';
+import Skills from './components/presentation/skills';
 import Finalize from  './components/presentation/finalizePage';
 import PrivateRoute from './components/PrivateRoute';
 
@@ -21,6 +24,8 @@ function App() {
 
      <Switch>
           <PrivateRoute path="/education" component={Education}></PrivateRoute>
+          <PrivateRoute path="/experience" component={Experience}></PrivateRoute>
+          <PrivateRoute path="/skills" component={Skills}></PrivateRoute>
           <PrivateRoute path="/contact" component={Contacts}></PrivateRoute>
           <Route path="/getting-started" component={GettingStarted}></Route>
           <PrivateRoute path="/resume-templates" component={GettingStarted}></PrivateRoute>
