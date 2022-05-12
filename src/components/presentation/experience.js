@@ -79,28 +79,28 @@ function Experience(props) {
                 <div className="error"></div>
               </div>
 
-              <div className="input-group"><label>Description Point 1</label>
+              <div className="input-group"><label>Enter Description Point 1</label>
                 <div className="effect"><input type="text"  name={fieldCd.Desc1}
                   onChange={onchange} value={getFieldData(fieldCd.Desc1)} /><span></span>
                 </div>
                 <div className="error"></div>
               </div>
 
-              <div className="input-group"><label>Description Point 2</label>
+              <div className="input-group"><label>Enter Description Point 2</label>
                 <div className="effect"><input type="text" name={fieldCd.Desc2}
                   onChange={onchange} value={getFieldData(fieldCd.Desc2)} /><span></span>
                 </div>
                 <div className="error"></div>
               </div>
 
-              <div className="input-group"><label>Description Point 3</label>
+              <div className="input-group"><label>Enter Description Point 3</label>
                 <div className="effect"><input type="text"  name={fieldCd.Desc3}
                   onChange={onchange} value={getFieldData(fieldCd.Desc3)} /><span></span>
                 </div>
                 <div className="error"></div>
               </div>
 
-              <div className="input-group"><label>Description Point 4</label>
+              <div className="input-group"><label>Enter Description Point 4</label>
                 <div className="effect"><input type="text"  name={fieldCd.Desc4}
                   onChange={onchange} value={getFieldData(fieldCd.Desc4)} /><span></span>
                 </div>
