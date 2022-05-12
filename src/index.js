@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'; 
-
+import {createStore,applyMiddleware} from 'redux'
 import rootReducer from './redux/reducers/rootReducer';
 import {composeWithDevTools} from 'redux-devtools-extension'
 import { Provider } from 'react-redux';
@@ -14,9 +14,10 @@ import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase';
 import { createFirestoreInstance } from 'redux-firestore';
 import LogRocket from 'logrocket';
+
 LogRocket.init('lvfql9/resume-builder');
 
-import {createStore,applyMiddleware} from 'redux'
+
 const store = createStore(
   rootReducer, // app reducer
   applyMiddleware(LogRocket.reduxMiddleware()),
